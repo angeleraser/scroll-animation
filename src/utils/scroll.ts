@@ -10,7 +10,7 @@ function isElementIntoView(element: HTMLElement) {
   const windowHeight = window.innerHeight;
   const { height, top } = element.getBoundingClientRect();
   const isShownByScrollDown = top <= windowHeight - height;
-  const isShowingScrollingUp = Math.abs(top) < height || top > 0;
+  // const isShowingScrollingUp = Math.abs(top) < height || top > 0;
 
   return isShownByScrollDown; /** && isShowingScrollingUp */
 }
